@@ -1,0 +1,9 @@
+0.1
+
+-Re wrote the game with more of an object oriented programming approach
+
+0.2
+
+-Added a file parser that loads in variables from the config.txt file
+
+-Added comments to make it easier to read
