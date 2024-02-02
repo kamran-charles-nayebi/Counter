@@ -8,18 +8,22 @@
 #include "character.h"
 #include "interface.h"
 
-class config
+class Config
 {
 private:
     int position;
+    std::string FilePath;
 public:
-    Interface* Menu;
     Character* First;
     Character* Second;
+    Character* Third;
 private:
-    void LoadMenu(std::string FilePath, Interface* menu);
-    void LoadCharacter(std::string FilePath, Character* person);
+    void LoadMenu() const;
+    void LoadCharacter(Character* person);
+    void ModConfig(std::string toReplace, std::string toReplaceWith) const;
 public:
-    config(std::string FilePath);
+    Config();
+    ~Config();
+    void SelectLevel(std::string aFilePath);
 };
 #endif

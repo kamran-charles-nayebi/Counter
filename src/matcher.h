@@ -3,8 +3,11 @@
 
 #include "character.h"
 
-int Index(int TargetAction, int ActingAction);
-
-int Match(Character aPerson);
+class Matcher
+{
+    static int Index(const int TargetAction, const int ActingAction);
+public:
+    static int Match(const Character* aTarget, const Character* aActing);
+};
 
 #endif

@@ -1,0 +1,32 @@
+//Feel free to change what you want
+
+Story
+Cutscene=Lass sees a flash before her eyes and narrowly avoids a grab. She readies herself for a fight.
+Rules = 0
+
+Character
+Name = Lass
+isPlayer = 1
+Action = 0
+isProne = 0
+Hp = 200
+Damage = 40
+isStunned = 0
+ActionName = Idle
+Limit = 4
+Speed = 20
+
+Character
+Name = Fast
+isPlayer = 0
+Action = 0
+isProne = 0
+Hp = 150
+Damage = 40;
+isStunned = 0
+ActionName = Idle
+Limit = 4
+Speed = 30
+
+Level
+Delay = 4

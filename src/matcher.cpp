@@ -53,22 +53,8 @@ int Index(int TargetAction, int ActingAction)
             case PARRY: return NOTHING;
             default: return NOTHING;
             }
-        case STRUGGLE:
-            switch (TargetAction) {
-            case ATTACK: return NORMAL;
-            case DEFEND: return NORMAL;
-            case GRAPPLE: return COUNTERED;
-            case PARRY: return NORMAL;
-            default: return NORMAL;
-            }
-        case REINFORCE:
-            switch (TargetAction) {
-            case ATTACK: return NORMAL;
-            case DEFEND: return COUNTERED;
-            case GRAPPLE: return NORMAL;
-            case PARRY: return NORMAL;
-            default: return NORMAL;
-            }
+        case STANDUP:
+            return NORMAL;
         default:
             return COUNTERED;
     }

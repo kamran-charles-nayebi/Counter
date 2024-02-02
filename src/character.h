@@ -6,8 +6,7 @@
 #define DEFEND 2
 #define GRAPPLE 3
 #define PARRY 4
-#define STRUGGLE 5
-#define REINFORCE 6
+#define STANDUP 5
 
 #define NORMAL 0
 #define WEAK 1
@@ -22,6 +21,7 @@ public:
     std::string Name;
     std::string Status;
     int Action;
+    int Cooldown;
     int Damage;
     int Hp;
     int Limit;
@@ -31,10 +31,10 @@ public:
     bool isStunned;
 
 private:
-    float EnemyAttacked;
-    float EnemyDefended;
-    float EnemyGrappled;
-    float EnemyParried;
+    float PlayerAttacked;
+    float PlayerDefended;
+    float PlayerGrappled;
+    float PlayerParried;
 
 public:
     Character();
@@ -48,6 +48,7 @@ public:
     void Defend();
     void Grapple();
     void Parry();
+    void StandUp();
 
 };
 #endif

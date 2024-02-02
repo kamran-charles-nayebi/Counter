@@ -7,3 +7,9 @@
 -Added a file parser that loads in variables from the config.txt file
 
 -Added comments to make it easier to read
+
+0.3
+
+-Expanded the file parser so there can be a story and levels and can remember settings
+
+-Added different levels and balanced the game a little bit

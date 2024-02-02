@@ -1,0 +1,32 @@
+//Feel free to change what you want
+
+Story
+Cutscene=After her fight with Fast, Lass rest against a tree until she hears a crack and ducks to avoid a punch that instead makes a sizable dent in a tree.
+Rules = 0
+
+Character
+Name = Lass
+isPlayer = 1
+Action = 0
+isProne = 0
+Hp = 200
+Damage = 40
+isStunned = 0
+ActionName = Idle
+Limit = 4
+Speed = 20
+
+Character
+Name = Strong
+isPlayer = 0
+Action = 0
+isProne = 0
+Hp = 140
+Damage = 80;
+isStunned = 0
+ActionName = Idle
+Limit = 4
+Speed = 15
+
+Level
+Delay = 4
